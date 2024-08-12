@@ -18,7 +18,13 @@ function App() {
           smooth
           top={900}
           color="white"
-          className="pl-[6px] bg-black py-2 rounded-full"
+          style={{
+            backgroundColor: "black",
+            borderRadius: "50%",
+            paddingLeft: "6px",
+            paddingTop: "8px",
+            paddingBottom: "8px",
+          }}
         />
         <div className="fixed w-full h-full -z-10">
           <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
