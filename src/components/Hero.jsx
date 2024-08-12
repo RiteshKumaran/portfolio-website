@@ -1,6 +1,6 @@
 import React from "react";
 import { HERO_CONTENT } from "../data";
-import riteshPic from "../assets/profile/ritesh-pic.jpg";
+import riteshPic from "../assets/profile/ritesh-pic-enchance.jpeg";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -53,7 +53,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.2 }}
-              className="rounded-lg border"
+              className="rounded-lg border h-[490px]"
               src={riteshPic}
               alt="Ritesh"
             />

@@ -16,10 +16,10 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="w-full lg:w-1/2 lg:p-8"
         >
-          <div className="flex items-center justify-center">
+          <div className="flex items-center  justify-center">
             <img
               width={400}
-              className="rounded-lg border-black border"
+              className="rounded-lg h-[500px] border-black border"
               src={aboutPic}
               alt="Ritesh"
             />
