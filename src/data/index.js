@@ -1,76 +1,123 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import weather from "../assets/weather.png";
+import analytics from "../assets/analytics.png";
+import crypto from "../assets/crypto.jpeg";
+import cyberthon from "../assets/cyberthon.png";
+import passwordNew from "../assets/password-new.jpeg";
+import gdsc from "../assets/gdsc-logo.png";
+import sos from "../assets/sos.webp";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a Frontend Developer specializing in React with TypeScript. As a proactive member of the technical team at Google Developer Students Club, I actively contribute to fostering innovation and knowledge-sharing within my college community. With a passion for attending events and conferences, I am dedicated to staying updated with the latest advancements in technology. Eager to leverage my skills and experiences to drive impactful projects and collaborations.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `Currently, I'm a Second-year student at SRM Ramapuram, doing Bachelor's degree in Computer Science. I'm a Technical team member at Google Developer Students Club SRM Ramapuram. My fascination with web development began when I crafted my very first HTML document. Since then, my journey has been marked by a relentless commitment to refining my skills. I firmly believe that the web is a powerful canvas for transformation, and I'm dedicated to making it a better place.
+
+Beyond the realm of coding, you'll often find me on the badminton court. This sport not only keeps me physically active but also hones my quick reflexes and strategic thinking, skills that are transferrable to problem-solving in web development. Music is another cornerstone of my life, it's both a source of relaxation and a wellspring of creativity.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "June 2024 - Present",
+    role: "Software Developer Intern",
+    company: "Ministry of Education",
+    description: `Worked on the development of the new School Innovaiton Council Website`,
+    technologies: ["React.js", "Tailwind CSS"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "October 2023 - Present",
+    role: "Technical Team Member",
+    company: "Google Developer Students Club",
+    description: `Developed the home page and sponsors page for the club’s website.
+Hosted a panel discussion on "Navigating the Startup Journey" as a key part of the GDSC Chennai Summit up
+Gave a presentation on "Mastering the Art of Creating a Sleek and Stylish UI" at DevCord '23, discussing JavaScript's capabilities and React's efficiency in streamlining UI development. Explained React's advantages in building reactive web applications.`,
+    technologies: [
+      "React.js",
+      "Typescript",
+      "Next.js",
+      "Firebase",
+      "Tailwind CSS",
+    ],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    year: "September 2023 - October 2022",
+    role: "Technical Team Member",
+    company: "TechPro Club",
+    description: `Engaged deeply with data structures and algorithms, enhancing problem-solving skills. Actively participated in numerous HackerRank and LeetCode contests, demonstrating proficiency in competitive programming.`,
+    technologies: ["Python", "C++", "DSA"],
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
+    year: "August 2023 - Present",
+    role: "Sophomore in Computer Science",
+    company: "SRMIST Ramapuram",
+    description: `Currently pursuing a Bachelor's degree in Computer Science, with a focus on web development and software engineering. Actively engaged in various technical and non-technical activities, including hackathons, coding competitions, and web development projects.`,
     technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+  },
+  {
+    year: "June 2009 - June 2023",
+    role: "High School Graduate",
+    company: "New Prince Matriculation Higher Secondary School",
+    description: `Completed high school with a focus on science and mathematics, laying the foundation for my future studies in computer science. Actively participated in extracurricular activities, including sports and music, to develop a well-rounded personality.`,
+    technologies: ["Python", "C++", "SQL"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
+    title: "Season Of Solutions Website",
+    image: sos,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Lead the Season of solutions website team and deloped the Hero and footer section of the website using Aceternity UI and Next.js",
+    technologies: ["Next.js", "Firebase", "Aceternity UI"],
+    link: "https://sos.gdscsrmrmp.club/",
   },
   {
-    title: "Task Management App",
-    image: project2,
+    title: "Weather Application",
+    image: weather,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Developed a user-friendly weather application using React and the Weather API, which provides real-time weather updates and forecasts. This project showcases my ability to integrate external APIs and enhance user experience through a responsive design, eﬀectively leveraging modern web development technologies.",
+    technologies: ["React.js", "API", "Tailwind CSS"],
+    link: "https://forecast-weather-app.vercel.app/",
   },
   {
-    title: "Portfolio Website",
-    image: project3,
+    title: "Cyberthon Website",
+    image: cyberthon,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Utilized React.js to create an engaging and interactive website for 'Cyberthon,' a cybersecurity-focused hackathon during CyberCarnival’24, markedly improving both user engagement and the overall event experience.",
+    technologies: ["React.js", "CSS"],
+    link: "https://hackathon.cybercarnival.in/",
   },
   {
-    title: "Blogging Platform",
-    image: project4,
+    title: "GDSC Website",
+    image: gdsc,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Developed the home page and sponsors page for the club’s website. Added firebase integration for the sponsors page, enabling dynamic updates and showcasing my skills in leveraging external data sources to enhance user experience.",
+    technologies: ["React.js", "CSS", "Firebase"],
+    link: "https://dev.gdscsrmrmp.club/",
+  },
+  {
+    title: "Static Webpage using React Tailwind",
+    image: analytics,
+    description:
+      "A static website built using React and Tailwind CSS, which showcases my skills in creating responsive and visually appealing web pages. This project demonstrates my ability to leverage modern web development technologies to deliver a seamless user experience.",
+    technologies: ["React.js", "Tailwind CSS"],
+    link: "https://ritz-analytics.vercel.app/",
+  },
+  {
+    title: "Crypto coin tracker",
+    image: crypto,
+    description:
+      "Developed a cryptocurrency tracking web application using React and the CoinGecko API, which enables users to monitor real-time data on various cryptocurrencies. This app features a user-friendly interface and provides dynamic updates, showcasing my skills in API integration and modern web frameworks",
+    technologies: ["React.js", "CSS", "API"],
+    link: "https://crypto-coin-tracker.vercel.app/",
+  },
+  {
+    title: "Password Generator",
+    image: passwordNew,
+    description:
+      "Built a password generator web application using React, which allows users to create secure and customizable passwords. This project demonstrates my ability to develop practical tools using modern web technologies, enhancing user security and convenience.",
+    technologies: ["React.js", "CSS"],
+    link: "https://ritz-password-generator.vercel.app/",
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  phoneNo: "+91 6383458849",
+  email: "riteshkumaran.dev@gmail.com",
 };
