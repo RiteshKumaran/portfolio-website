@@ -59,7 +59,7 @@ export const Events = () => {
         <EventCard
           src={summit}
           title="GDSC Chennai Summit Up"
-          description="Chennai • Mar 2, 2024 | Hosted a panel discussion on 'Navigating the Startup Journey' as a key part of the GDSC Chennai Summit up"
+          description="Chennai • Mar 2, 2024 | Hosted a panel discussion on Navigating the Startup Journey as a key part of the GDSC Chennai Summit up"
         />
         <EventCard
           src={nexus}
