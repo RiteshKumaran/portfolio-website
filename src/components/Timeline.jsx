@@ -52,9 +52,9 @@ const Timeline = () => {
         ))}
       </div>
       <button className="flex justify-center items-center mx-auto  gap-2 border-neutral-500  rounded-md">
-        <div class="mx-auto flex items-center justify-center rounded-md">
-          <div class=" w-full rounded-md bg-gradient-to-r from-purple-500 to-cyan-500 p-[1px]">
-            <div class="flex py-2 px-2 h-full w-full items-center justify-center bg-gray-800 rounded-md">
+        <div className="mx-auto flex items-center justify-center rounded-md">
+          <div className=" w-full rounded-md bg-gradient-to-r from-purple-500 to-cyan-500 p-[1px]">
+            <div className="flex py-2 px-2 h-full w-full items-center justify-center bg-gray-800 rounded-md">
               <a href={ritesh_resume} download={ritesh_resume}>
                 Download Resume
               </a>
