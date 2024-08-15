@@ -17,7 +17,7 @@ export const EXPERIENCES = [
     year: "June 2024 - Present",
     role: "Software Developer Intern",
     company: "Ministry of Education",
-    description: `Worked on the development of the new School Innovaiton Council Website`,
+    description: `Working on the development of the new School Innovaiton Council Website`,
     technologies: ["React.js", "Tailwind CSS"],
   },
   {
