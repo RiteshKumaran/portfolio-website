@@ -17,7 +17,7 @@ export const EXPERIENCES = [
     year: "June 2024 - Present",
     role: "Software Developer Intern",
     company: "Ministry of Education",
-    description: `Working on the development of the new School Innovaiton Council Website`,
+    description: `Working on the development of the new School Innovation Council Website`,
     technologies: ["React.js", "Tailwind CSS"],
   },
   {
@@ -63,7 +63,7 @@ export const PROJECTS = [
     title: "Season Of Solutions Website",
     image: sos,
     description:
-      "Lead the Season of solutions website team and deloped the Hero and footer section of the website using Aceternity UI and Next.js",
+      "Led the Season of Solutions website team and developed the Hero and footer section of the website using Aceternity UI and Next.js",
     technologies: ["Next.js", "Firebase", "Aceternity UI"],
     link: "https://sos.gdscsrmrmp.club/",
   },
