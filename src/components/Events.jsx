@@ -91,7 +91,7 @@ export const Events = () => {
         <EventCard
           src={nexus}
           title="React Nexus"
-          description="Bangalore • Jul 7, 2023 | Attended React Nexus, which is a 2-day conference fully packed with excellent talks and panel discussions on topics related to React and React Native."
+          description="Bangalore • Jul 7, 2023 | Attended React Nexus, a 2-day conference fully packed with excellent talks and panel discussions by industry leaders and experts on topics related to React and React Native development."
         />
         <EventCard
           src={jsConf}
@@ -111,12 +111,12 @@ export const Events = () => {
         <EventCard
           src={codeathon}
           title="Codeathon"
-          description="SRM, Chennai • October 2023 | Participated in a 2 hour coding competition by TechPro Club"
+          description="Online • October 2023 | Participated in a 2 hour coding competition by TechPro"
         />
         <EventCard
           src={hackerrank}
           title="HackerRank Challenge"
-          description="Online • October 2023 | Actively participated in HackerRank's coding challenge"
+          description="Online • October 2023 | Participated in HackerRank's coding contests"
         />
       </motion.div>
     </div>

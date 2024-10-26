@@ -6,6 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 export const Email = () => {
   const [verified, setVerified] = useState(false);
+  const recaptchaRef = useRef(null);
   const form = useRef();
   const [status, setStatus] = useState("");
 
@@ -25,6 +26,7 @@ export const Email = () => {
           setStatus("success");
           toast.success("Message sent successfully!");
           form.current.reset(); // Reset form after successful send
+          recaptchaRef.current.reset(); // Reset the ReCAPTCHA
         },
         (error) => {
           console.log(error.text);
@@ -109,6 +111,7 @@ export const Email = () => {
             className="w-full mb-5 px-4 py-2 bg-[rgba(255,255,255,0)] border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 text-gray-100"
           ></textarea>
           <ReCAPTCHA
+            ref={recaptchaRef}
             sitekey="6LeQ0WwqAAAAABdq8f0e76c_qBz36U2l5crQmdYd"
             onChange={() => {
               setVerified(true);

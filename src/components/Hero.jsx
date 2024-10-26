@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HERO_CONTENT } from "../data";
 import riteshPic from "../assets/profile/ritesh-pic-enchance.jpeg";
 import riteshPic1 from "../assets/profile/ritesh-pic.jpeg";
@@ -23,7 +23,7 @@ const container = (delay) => ({
 const Hero = () => {
   return (
     <div className="border-b pb-4 lg:mb-36 border-neutral-900">
-      <div className="flex justify-center items-center flex-wrap">
+      <div className="flex justify-center items-center flex-wrap flex-col-reverse lg:flex-row">
         <div className="w-full lg:w-1/2">
           <div className="flex mx-6 flex-col  lg:items-start">
             <motion.h1
@@ -56,16 +56,8 @@ const Hero = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 200 }}
           transition={{ duration: 1.5 }}
-          className="relative z-index-[5] w-[80%] h-[80%] md:w-[55%] md:h-[55%] lg:w-[35%] lg:h-[35%]"
+          className="relative mb-10 z-index-[5] w-[75%] h-[75%] sm:w-[50%] sm:h-[50%]  md:w-[45%] md:h-[45%] lg:w-[35%] lg:h-[35%]"
         >
-          {/* <motion.img
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.2 }}
-            className="w-[310px] h-[470px] rounded-lg  "
-            src={riteshPic1}
-            alt="Ritesh"
-          /> */}
           <Lottie animationData={heroAnimation} loop={true} play />
         </motion.div>
       </div>
