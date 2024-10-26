@@ -6,9 +6,14 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="border-b flex flex-col justify-center border-neutral-900 pb-4">
-      <h2 className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-center mx-auto my-20 md:mb-20">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-center mx-auto my-20 md:mb-20"
+      >
         About Me
-      </h2>
+      </motion.h2>
       <div className="flex flex-wrap">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -18,8 +23,7 @@ const About = () => {
         >
           <div className="flex items-center  justify-center">
             <img
-              width={400}
-              className="rounded-lg h-[500px] border-black border"
+              className="rounded-lg h-[300px] lg:h-[400px] border-black border"
               src={aboutPic}
               alt="Ritesh"
             />

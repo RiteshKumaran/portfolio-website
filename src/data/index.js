@@ -5,6 +5,8 @@ import cyberthon from "../assets/cyberthon.png";
 import passwordNew from "../assets/password-new.jpeg";
 import gdsc from "../assets/gdsc-logo.png";
 import sos from "../assets/sos.webp";
+import dashboard from "../assets/dashboard.jpeg";
+import sic from "../assets/sic.png";
 
 export const HERO_CONTENT = `I am a Frontend Developer specializing in React with TypeScript. As a proactive member of the technical team at Google Developer Students Club, I actively contribute to fostering innovation and knowledge-sharing within my college community. With a passion for attending events and conferences, I am dedicated to staying updated with the latest advancements in technology. Eager to leverage my skills and experiences to drive impactful projects and collaborations.`;
 
@@ -17,7 +19,7 @@ export const EXPERIENCES = [
     year: "June 2024 - Present",
     role: "Software Developer Intern",
     company: "Ministry of Education",
-    description: `Working on the development of the new School Innovation Council Website`,
+    description: `Working on the development of the new School Innovation Council Website. Collaborating with the design team to create a visually appealing and user-friendly interface. Implementing new features and functionalities to enhance the overall user experience.`,
     technologies: ["React.js", "Tailwind CSS"],
   },
   {
@@ -28,11 +30,14 @@ export const EXPERIENCES = [
 Hosted a panel discussion on "Navigating the Startup Journey" as a key part of the GDSC Chennai Summit up
 Gave a presentation on "Mastering the Art of Creating a Sleek and Stylish UI" at DevCord '23, discussing JavaScript's capabilities and React's efficiency in streamlining UI development. Explained React's advantages in building reactive web applications.`,
     technologies: [
+      "Javascript",
       "React.js",
       "Typescript",
       "Next.js",
+      "TailwindCSS",
       "Firebase",
-      "Tailwind CSS",
+      "MongoDB",
+      "Git",
     ],
   },
   {
@@ -47,7 +52,7 @@ Gave a presentation on "Mastering the Art of Creating a Sleek and Stylish UI" at
     role: "Sophomore in Computer Science",
     company: "SRMIST Ramapuram",
     description: `Currently pursuing a Bachelor's degree in Computer Science, with a focus on web development and software engineering. Actively engaged in various technical and non-technical activities, including hackathons, coding competitions, and web development projects.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    technologies: ["C", "C++", "Python", "DSA"],
   },
   {
     year: "June 2009 - June 2023",
@@ -59,6 +64,22 @@ Gave a presentation on "Mastering the Art of Creating a Sleek and Stylish UI" at
 ];
 
 export const PROJECTS = [
+  {
+    title: "School Inovation Council Website",
+    image: sic,
+    description:
+      "Completely revamped the School Innovation Council website. Implemented new features and functionalities to enhance the overall user experience.",
+    technologies: ["React.js", "TailwindCSS"],
+    link: "https://sos.gdscsrmrmp.club/",
+  },
+  {
+    title: "Data Analytics Dashboard",
+    image: dashboard,
+    description:
+      "Developed a data analytics dashboard which enables users to visualize and analyze data effectively. This project showcases my ability to create interactive and visually appealing data visualizations, enhancing user understanding and engagement.",
+    technologies: ["React.js", "TailwindCSS", "MongoDB", "Express.js"],
+    link: "https://sos.gdscsrmrmp.club/",
+  },
   {
     title: "Season Of Solutions Website",
     image: sos,
@@ -119,5 +140,5 @@ export const PROJECTS = [
 
 export const CONTACT = {
   phoneNo: "+91 6383458849",
-  email: "riteshkumaran.dev@gmail.com",
+  email: "contact@riteshkumaran.me",
 };

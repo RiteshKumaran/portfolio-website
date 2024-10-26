@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -9,17 +9,35 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { Events } from "./components/Events";
 import ScrollToTop from "react-scroll-to-top";
+import { Loading } from "./components/Loading";
+import { Toaster } from "sonner";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a loading delay
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1700); // Adjust the delay as needed (e.g., 3000ms for 3 seconds)
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <>
+      <Toaster />
       <div className="overflow-x-hidden text-neutral-300 antialiased">
         <ScrollToTop
           smooth
           top={900}
           color="white"
           style={{
-            backgroundColor: "black",
+            backgroundColor: "rgba(255,255,255,0)",
             borderRadius: "50%",
             paddingLeft: "6px",
             paddingTop: "8px",

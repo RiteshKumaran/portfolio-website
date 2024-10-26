@@ -3,6 +3,7 @@ import { CONTACT } from "../data";
 import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import ScrollToTop from "react-scroll-to-top";
+import { Email } from "./Email";
 
 const Contact = () => {
   return (
@@ -16,6 +17,7 @@ const Contact = () => {
         Get in touch
       </motion.h2>
       <div className="text-center tracking-tighter ">
+        <Email />
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
@@ -42,8 +44,15 @@ const Contact = () => {
         >
           {CONTACT.phoneNo}
         </motion.p>
-        <a className="border-b" href="mailto:riteshkumaran.dev@gmail.com">
-          {CONTACT.email}
+        <a href="mailto:contact@riteshkumaran.me">
+          <motion.div
+            className="mt-2"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1 }}
+          >
+            {CONTACT.email}
+          </motion.div>
         </a>
       </div>
     </div>
